@@ -12,8 +12,15 @@ variables:
   value: aml-cli-v2
 
 
+
 trigger:
-- none
+  branches:
+    include:
+    - master
+    - main
+  paths:
+    include:
+    - data-science/
 
 pool:
   vmImage: ubuntu-20.04
