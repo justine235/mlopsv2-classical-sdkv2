@@ -15,15 +15,6 @@ variables:
 - name: endpoint_type
   value: batch
 
-
-resources:
-  repositories:
-    - repository: mlopsv2-classical-sdkv2 # Template Repo
-      name: justine235/mlopsv2-classical-sdkv2 # need to change org name from "Azure" to your own org
-      endpoint: justine235 # need to set up and hardcode
-      type: github
-      ref: main
-      
 trigger:
   branches:
     include:
