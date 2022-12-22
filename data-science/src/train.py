@@ -115,6 +115,8 @@ def main(args):
     rmse = np.sqrt(mse)
     mae = mean_absolute_error(y_train, yhat_train)
     
+    print(mae)
+    
     # log model performance metrics
     mlflow.log_metric("train r2", r2)
     mlflow.log_metric("train mse", mse)
