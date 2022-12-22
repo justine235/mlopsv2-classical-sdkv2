@@ -18,7 +18,7 @@ pool:
 resources:
   repositories:
     - repository: mlops-templates 
-      name: Azure/mlops-templates 
+      name: justine235/mlops-templates 
       endpoint: justine235
       type: github
       ref: main #branch name
