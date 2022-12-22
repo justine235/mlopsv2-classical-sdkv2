@@ -19,7 +19,7 @@ resources:
   repositories:
     - repository: mlops-templates 
       name: Azure/mlops-templates 
-      endpoint: github-connection
+      endpoint: justine235
       type: github
       ref: main #branch name
 
