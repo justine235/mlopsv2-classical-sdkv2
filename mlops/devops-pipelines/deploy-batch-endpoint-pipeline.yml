@@ -15,15 +15,8 @@ variables:
 - name: endpoint_type
   value: batch
 
-trigger:
-  branches:
-    include:
-    - master
-    - main
-  paths:
-    include:
-    - data-science/
-    - data/
+
+trigger: none
 
 pool:
   vmImage: ubuntu-20.04
