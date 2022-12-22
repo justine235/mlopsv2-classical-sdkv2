@@ -15,8 +15,24 @@ variables:
 - name: endpoint_type
   value: batch
 
+
+resources:
+  repositories:
+    - repository: mlopsv2-classical-sdkv2 # Template Repo
+      name: justine235/mlopsv2-classical-sdkv2 # need to change org name from "Azure" to your own org
+      endpoint: justine235 # need to set up and hardcode
+      type: github
+      ref: main
+      
 trigger:
-- none
+  branches:
+    include:
+    - master
+    - main
+  paths:
+    include:
+    - data-science/
+    - data/
 
 pool:
   vmImage: ubuntu-20.04
@@ -25,8 +41,8 @@ pool:
 resources:
   repositories:
     - repository: mlops-templates  # Template Repo
-      name: Azure/mlops-templates # need to change org name from "Azure" to your own org
-      endpoint: github-connection # need to set up and hardcode
+      name: justine235/mlops-templates # need to change org name from "Azure" to your own org
+      endpoint: justine235 # need to set up and hardcode
       type: github
       ref: main
       
