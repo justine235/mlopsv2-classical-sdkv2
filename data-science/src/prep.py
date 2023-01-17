@@ -92,6 +92,8 @@ def main(args):
     train = data[msk_train]
     val = data[msk_val]
     test = data[msk_test]
+    
+    print(train.shape[0])
 
     mlflow.log_metric('train size', train.shape[0])
     mlflow.log_metric('val size', val.shape[0])
